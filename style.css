@@ -156,15 +156,16 @@ form{
     width: 250px;
     height: 42px;
     max-width: 90%;
-    border: 1px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.142);
     overflow: hidden;
+
 }
 
 form input{
     width: 100%;
     outline: none;
-    border: none;
-    
+    border: none; 
+
 }
 
 form button{
@@ -174,11 +175,18 @@ form button{
     color: #fff;
     border-radius: 2px;
     cursor: pointer;
-
+	transition:all 0.5s;
+	
+}
+form button:hover{
+	transform:Scale(1.1);
+	padding: 0 12px;
 }
 
 select{
     cursor: pointer;
+	padding:3px 5px;
+	border-color:rgba(0, 0, 0, 0.142);	
 }
 
 @media only screen and (max-width:650px){
